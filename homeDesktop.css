@@ -1,0 +1,230 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+   font-size: large;
+}
+/*---------------------------------------------------------------------------------
+             presentation of sidebar  cum navigation toogle panel
+------------------------------------------------------------------------------------*/ 
+
+.btn
+{
+   display:none;
+}
+
+h1
+{
+    opacity:1;
+}
+
+
+/*---------------------------------------------------------------------------------
+             presentation of header panel
+------------------------------------------------------------------------------------*/ 
+#head
+{     
+    margin:0px 0px 15px 0px;    
+    height:auto;
+    width:auto;
+    background: url("headFull.jpg") no-repeat top black ;
+   
+    box-shadow: 5px 5px 6px black;
+    padding:10px;
+   
+}
+
+#head h1, h3
+{
+    text-align: center;
+    color:white;
+    margin:0px;
+  
+}
+
+#head h1
+{
+    padding-top: 60px;
+    font-size:2.6em;
+}
+
+#head h2
+{
+    padding-top: 20px;
+    font-size:2.0em;
+}
+
+#headMenuList
+{   
+   list-style-type: none;
+   margin-top:50px;
+   margin-bottom: 0px;
+  
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content:right;
+}
+
+.menuList li
+{   
+   
+    display:inline-block;
+    margin:10px 25px 10px 0px;
+    text-align: center;
+    border-bottom:2px solid red;    
+}
+
+.menuList li a
+{    
+    font-size:1.5em;
+    color:white;
+    text-decoration: none;
+}
+     
+.menuList li:hover, .menuList li a:hover
+{
+    color:red;
+    border-bottom:2px solid #40603B; 
+    font-weight: bold;
+}
+
+.menuList .menuSelected, .menuList .menuSelected > a 
+{
+    color:red;
+    border-bottom:2px solid #40603B; 
+    font-weight: bold;      
+}
+/*
+            End of head section
+________________________________________________________________________________*/
+
+
+/*---------------------------------------------------------------------------------
+             presentation of main section or receipe panel
+------------------------------------------------------------------------------------*/
+#main
+{
+    background: url(background.jpg) repeat;
+    text-align: center;    
+    padding:10px;
+}
+
+#todayMenu
+{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    box-sizing: border-box;
+    margin:auto;
+    height:auto;
+    border:5px solid black; 
+    border-radius: 10px;
+    background-color: gold;
+    opacity: 0.8;
+}
+
+#todayMenuImage
+{  
+   height:auto;
+   width:auto;
+   margin:10px;
+  
+   background-color: #40603B;
+   opacity: none;
+}
+
+#todayMenuArticle
+{
+    height:auto;
+    width:auto;
+    background-color: black;
+    margin:10px;
+}
+
+hr
+{
+    margin:20px;
+}
+#recepie-container-flex
+{  
+    width:auto;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    padding:20px;    
+}
+
+.recepieCatogery
+{  
+    margin:10px;
+    width:120px;
+    height:120px;
+    background-color: burlywood; 
+    border-radius: 15px 0px 15px 0px;
+}
+
+.recepieCatogery:hover
+{
+    background-color: gold;
+    box-shadow: 5px 5px 10px black;
+    border: 2px dashed red;
+    cursor: pointer;
+}
+
+#SeeFullMenuOption
+{
+        display:none;   
+}
+
+
+/*---------------------------------------------------------------------------------
+             presentation of footer panel
+------------------------------------------------------------------------------------*/ 
+#foot
+{
+  
+    width:auto;   
+    text-align: center;
+    background-color:#1E1E1E;
+    font-size: 1.01.oem;
+    color:white;
+}
+#label
+{
+   margin:25px;
+}
+#foot section#connection-flex
+{
+    background-color: black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*or we use flex-flow:row wrap*/
+    justify-content:center;
+}
+#foot section#connection-flex article
+{
+   /* box-sizing: border-box;*/
+    height:30px;
+    width:30px;
+    padding:10px;
+    margin:10px;
+    background-color:#1E1E1E;
+    font-size: 1.6em;
+}
+#foot section#connection-flex article:hover
+{
+    background-color: red;
+}
+
+#foot p
+{    
+    padding:10px;
+}
+#foot span
+{
+    font-weight: bold;
+    text-decoration: underline slateblue;
+}

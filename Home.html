@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sinha Kitchen | Home</title>
+    <link rel="stylesheet" href="homeDesktop.css">
+     <link rel="stylesheet" href="homeMobile.css" media="screen and (max-width:480px)">
+   
+    <script src="home.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+    <!---------------------------------------------------------------------------------------------------------
+        Sidebar navigation panel for mobile view
+    ---------------------------------------------------------------------------------------------------------->
+    <nav id="sidebar">
+        <div id="sideButton" class="btn" onclick="hide()"> <!--button on sidebar panel, hide() is a javascript function which allow to hide or unhide the sidebar-->
+                <i class="fas fa-times"></i> <!--bar image-->
+            </div>
+
+        <ul class="menuList" id="sidebarMenuList">
+
+            <li><a class="menuSelected" href="">Home</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Feedback</a></li>
+
+        </ul>
+    </nav>
+ <!------End of sidebar navigation panel------------------------------------------------------------------------------------------------------->  
+
+
+
+<!---------------------------------------------------------------------------------------------------------------------------
+    Header of the page:- consist image, menu button for mobile, navigation for desktop
+----------------------------------------------------------------------------------------------------------------------------->
+    <header id="head">
+        <div id="headButton" class="btn" onclick="hide()"> <!--button on header, visible all the time in mobile view but not on desktop view-->
+                    <i class="fas fa-bars"></i>
+        </div>
+        
+        <h1>Sinha Kitchen</h1>
+        <h3>A kitchen of multiple flavour</h3>
+
+        <nav id="headMenu">       
+                <ul class="menuList" id="headMenuList">
+        
+                    <li class="menuSelected"><a href="">Home</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Feedback</a></li>
+        
+                </ul>
+         </nav>
+        
+
+    </header>
+<!---------End of header----------------------------------------------------------------------------------------------------->
+
+
+
+<!-----------------------------------------------------------------------------------------------------------------------------
+Main section of the page consist item like:- recepie category, today recepie, full menu list and all the related data.
+Data are coming from json and javascript and some element are created here by javascript like:- Menu list and all
+---------------------------------------------------------------------------------------------------------------------------->
+    <main id="main">
+        <section id="todayMenu"> <!--today recepie block-->
+              
+            <article id="todayMenuImage">
+               <img src="testimage.png" width="100%" height="100%">
+            </article>
+            <article id="todayMenuArticle">
+
+            </article>
+        </section>
+        <hr>
+
+        <section id="recepie-container-flex"> <!--category selection block-->
+
+            <article class="recepieCatogery"></article>
+            <article class="recepieCatogery"></article>
+            <article class="recepieCatogery"> </article>
+            <article class="recepieCatogery"> </article>
+            <article class="recepieCatogery"> </article>
+            <article class="recepieCatogery"> </article>
+        </section>
+
+        <section id="menuList"></section>
+
+        <a href="" style="text-decoration: none; color:white; align-items:center"> <!--full menu button-->
+        <div id="SeeFullMenuOption">
+          See full list of menu
+        </div>
+        </a>
+       
+    </main>
+<!----------End of main section---------------------------------------------------------------------------------->
+
+
+<!----------------------------------------------------------------------------------------------------------------------------
+    Footer of the page, consist element like:- link for youtube, instagram,
+-------------------------------------------------------------------------------------------------------------------------------->
+    <footer id="foot">
+          
+        <section id="connection-flex">
+            <label id="label">Connect with us:</label>
+            <article><i class="fab fa-youtube"></i></article>
+            <article><i class="fab fa-facebook-square"></i></article>
+            <article><i class="fab fa-instagram"></i></article>
+
+        </section>
+        <p>
+            This website is designed and developed by<br><span>Kumar Satyam</span>
+            <br>
+            Contact to build your own website : 9891255960 or Email:-satyamshay@gmail.com
+        </p>
+    </footer>
+</body>
+</html>
